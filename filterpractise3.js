@@ -19,3 +19,14 @@ const users = [
 const nomnalizePhone =users.filter(user => user.verified).map(user => user.phone.trim().replace(/-/g,""));
 
 console.log(nomnalizePhone);
+
+const employees = [
+  { name: "Anna", years: 5, role: "QA" },
+  { name: "John", years: 2, role: "Developer" },
+  { name: "Lily", years: 6, role: "Manager" }
+];
+
+const formattedEmp=employees.filter(employee => employee.years >=5)
+                    .map(employee => `${employee.name} - ${employee.role} (${employee.years} years)`);
+
+console.log(formattedEmp);
