@@ -31,6 +31,29 @@ const gameObj={
 }
 
 for (const key in gameObj) {
-   console.log(`${key} is the key for ${gameObj[key]}`);
+   //console.log(`${key} is the key for ${gameObj[key]}`);
    
 }
+
+const coding=["js","ruby","python","java","cpp"];
+
+coding.forEach(function(val){
+    //console.log(val);
+    
+})
+
+coding.forEach((value)=>{
+    //console.log(value);
+    
+})
+
+function printMe(item){
+console.log(item);
+
+}
+//coding.forEach(printMe)
+
+coding.forEach((item, index, arr) => {
+    console.log(item, index, arr);
+    
+})
